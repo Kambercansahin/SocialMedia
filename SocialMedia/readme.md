@@ -1,24 +1,24 @@
 # Notlar
 
-## Docker Image larını eklemek
+## Docker Imagelarını eklemek
 
     PostgreSQL
     userName: postgres
     password: root
     DB: AuthDB
 ```bash
-docker run -d --name postgresql -p 5432:5432 muhammedali55/postgresql:v.0.1
+docker run -d --name postgresql -p 5432:5432 kambercansahin/postgresql:v.0.1
 ```
     MongoDB
     userName: admin
     password: root
     DB: UserProfileDB
 ```bash
-docker run -d --name mongodb -p 27017:27017 muhammedali55/mongodb:v.0.3
+docker run -d --name mongodb -p 27017:27017 kambercansahin/mongodb:v.0.3
 ```
 
     mongod: 
-    db.createUser({user: "muhammet",pwd: "root",roles: ["readWrite","dbAdmin"]}) 
+    db.createUser({user: "kambercan",pwd: "root",roles: ["readWrite","dbAdmin"]}) 
 
 ## Docker üzerinde Redis Single Node oluşturmak
 
@@ -68,14 +68,4 @@ docker build -t kambercansahin/auth:v02 .
 
 docker build -t kambercansahin/user:v02 .
 ````
-    3- Eğer M chip bir macOS var ise 
-````bash
-docker build --platform linux/amd64 -t kambercansahin/microserviceconfigserver:v01 .
-
-
-docker build --platform linux/amd64 -t muhammedali55/egitimauth:v02 .
-
-
-docker build --platform linux/amd64 -t muhammedali55/egitimuser:v02 .
-
-````
+ 
